@@ -12,4 +12,8 @@
 
 (deftest remove-zeros-test
   (testing "Returns a new list without zero values"
-    (is (= (remove-zeros '(0 1 0 2 0 3 0 4 0 5))))))
+    (is (= (remove-zeros '(0 1 0 2 0 3 0 4 0 5)) '(1 2 3 4 5)))))
+
+(deftest dup-item-test
+  (testing "Returns a new list with duplicated item"
+    (is (= (dup-item '(1 2 3 4 5 1) 1) '(1 1 2 3 4 5 1 1)))))
