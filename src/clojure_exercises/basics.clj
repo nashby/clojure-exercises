@@ -7,3 +7,7 @@
   (map (fn [n]
             (if (neg? n) 0 n))
         items))
+
+(defn remove-zeros [items]
+  (filter (fn [n] (not(zero? n))) items))
+
