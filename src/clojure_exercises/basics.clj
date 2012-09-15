@@ -13,3 +13,6 @@
 
 (defn dup-item [items, dup]
   (mapcat (fn [n] (if (= dup n) (repeat 2 n) (list n))) items))
+
+(defn item-count [items, x]
+  (count (filter (fn [n] (if (= x n) n)) items)))

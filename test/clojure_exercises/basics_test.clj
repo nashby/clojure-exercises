@@ -17,3 +17,7 @@
 (deftest dup-item-test
   (testing "Returns a new list with duplicated item"
     (is (= (dup-item '(1 2 3 4 5 1) 1) '(1 1 2 3 4 5 1 1)))))
+
+(deftest item-count-test
+  (testing "Returns count of items in given list"
+    (is (= (item-count '(0 1 2 3 4 1 2 1 3) 1) 3))))
