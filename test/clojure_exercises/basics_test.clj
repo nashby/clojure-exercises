@@ -21,3 +21,7 @@
 (deftest item-count-test
   (testing "Returns count of items in given list"
     (is (= (item-count '(0 1 2 3 4 1 2 1 3) 1) 3))))
+
+(deftest reverse-list-test
+  (testing "Returns reversed list"
+    (is (= (reverse-list '(0 1 2 3 4 5)) '(5 4 3 2 1 0)))))

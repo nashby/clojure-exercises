@@ -16,3 +16,6 @@
 
 (defn item-count [items, x]
   (count (filter (fn [n] (if (= x n) n)) items)))
+
+(defn reverse-list [items]
+  (reverse items))
