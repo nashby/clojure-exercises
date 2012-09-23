@@ -1,6 +1,6 @@
-(ns clojure-exercises.basics-test
+(ns clojure-exercises.lists-test
   (:use clojure.test
-        clojure-exercises.basics))
+        clojure-exercises.lists))
 
 (deftest shift-pop-test
   (testing "Returns a new list without first and last items"
@@ -25,7 +25,3 @@
 (deftest reverse-list-test
   (testing "Returns reversed list"
     (is (= (reverse-list '(0 1 2 3 4 5)) '(5 4 3 2 1 0)))))
-
-(deftest first-digit-test
-  (testing "Returns the first digit of given number"
-    (is (= (first-digit 345) 3))))

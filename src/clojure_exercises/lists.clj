@@ -1,4 +1,4 @@
-(ns clojure-exercises.basics)
+(ns clojure-exercises.lists)
 
 (defn shift-pop [items]
   (rest (butlast items)))
@@ -19,6 +19,3 @@
 
 (defn reverse-list [items]
   (reverse items))
-
-(defn first-digit [x]
-  (if (>= x 10) (recur (quot x 10)) x))
