@@ -9,7 +9,7 @@
         items))
 
 (defn remove-zeros [items]
-  (filter (fn [n] (not (zero? n))) items))
+  (remove zero? items))
 
 (defn dup-item [items, dup]
   (mapcat (fn [n] (if (= dup n) (repeat 2 n) (list n))) items))
